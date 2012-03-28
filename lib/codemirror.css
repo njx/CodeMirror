@@ -72,7 +72,7 @@
   white-space: pre;
   cursor: text;
 }
-.CodeMirror-lines * {
+.CodeMirror.cm-flicker-fix .CodeMirror-lines * {
   /* Necessary for throw-scrolling to decelerate properly on Safari. */
   pointer-events: none;
 }
