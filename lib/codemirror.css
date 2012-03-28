@@ -49,9 +49,6 @@
 .CodeMirror-scrollbar.cm-sb-nonoverlap {
   min-width: 12px;
 }
-.CodeMirror-scrollbar.cm-sb-ie {
-  min-width: 20px;
-}
 
 .CodeMirror-gutter {
   position: absolute; left: 0; top: 0;
