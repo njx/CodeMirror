@@ -22,6 +22,7 @@
   overflow-y: hidden;
 }
 
+/* The .CodeMirror-scrollbar classes are only used if the flickerFix option is set. */
 .CodeMirror-scrollbar {
   float: right;
   overflow-x: hidden;
@@ -31,13 +32,11 @@
      by the rule for .CodeMirror-scrollbar-inner. */
   margin-left: -1px;
 }
-
 .CodeMirror-scrollbar-inner {
   /* This needs to have a nonzero width in order for the scrollbar to appear 
      in Firefox and IE9. */
   width: 1px;
 }
-
 .CodeMirror-scrollbar.cm-sb-overlap {   
   /* Ensure that the scrollbar appears in Lion, and that it overlaps the content
      rather than sitting to the right of it. */
@@ -47,11 +46,9 @@
   right: 0;
   min-width: 12px;
 }
-
 .CodeMirror-scrollbar.cm-sb-nonoverlap {
   min-width: 12px;
 }
-
 .CodeMirror-scrollbar.cm-sb-ie {
   min-width: 20px;
 }
