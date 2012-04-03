@@ -12,6 +12,8 @@
      is visible outside of the scrolling box. */
   position: relative;
   outline: none;
+  /* TODO: What's the right way to put this in front of the gutter? Why is the gutter at z-index 10 to begin with? */
+  z-index: 11;
 }
 
 .CodeMirror-gutter {
