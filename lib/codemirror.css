@@ -16,6 +16,12 @@
   z-index: 11;
 }
 
+.CodeMirror-scroll * {
+  /* Necessary since the scroller now overlays the actual line div. */
+  /* TODO: doesn't take the gutter into account. Probably need to actually manually set cursor on mousemove. */
+  cursor: text;
+}
+
 .CodeMirror-gutter {
   position: absolute; left: 0; top: 0;
   z-index: 10;
