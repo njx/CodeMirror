@@ -20,6 +20,12 @@
   /* Necessary since the scroller now overlays the actual line div. */
   /* TODO: doesn't take the gutter into account. Probably need to actually manually set cursor on mousemove. */
   cursor: text;
+
+  /* IE allows mouse events to target items underneath divs with no background. Since we need the
+     scroller to handle the events, we give it a background but make it fully transparent. */
+  background: #000;
+  filter: alpha(opacity = 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .CodeMirror-gutter {
