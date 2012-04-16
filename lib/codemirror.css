@@ -25,7 +25,7 @@
      scroller to handle the events, we give it a background but make it fully transparent. */
   background: #000000;
   background: rgba(0, 0, 0, 0); /* IE9 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE8 */
   filter: alpha(opacity=0); /* IE<8 */
 }
 
