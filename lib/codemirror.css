@@ -1,15 +1,15 @@
 .CodeMirror {
   line-height: 1em;
   font-family: monospace;
-}
 
-.CodeMirror.cm-flicker-fix {
   /* This prevents a scrollbar from showing up on the body in IE. */
   overflow-y: hidden;
+  position: relative;
 }
 
 .CodeMirror-scroll {
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   height: 300px;
   /* This is needed to prevent an IE[67] bug where the scrolled content
      is visible outside of the scrolling box. */
@@ -17,12 +17,7 @@
   outline: none;
 }
 
-.CodeMirror.cm-flicker-fix .CodeMirror-scroll {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-/* The .CodeMirror-scrollbar classes are only used if the flickerFix option is set. */
+/* Vertical scrollbar */
 .CodeMirror-scrollbar {
   float: right;
   overflow-x: hidden;
@@ -69,7 +64,7 @@
   white-space: pre;
   cursor: text;
 }
-.CodeMirror.cm-flicker-fix .CodeMirror-lines * {
+.CodeMirror-lines * {
   /* Necessary for throw-scrolling to decelerate properly on Safari. */
   pointer-events: none;
 }
