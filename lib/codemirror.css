@@ -44,8 +44,7 @@
 .CodeMirror-scrollbar.cm-sb-nonoverlap {
   min-width: 12px;
 }
-.CodeMirror-scrollbar.cm-sb-ie-lt9 {
-  /* This needs a nonzero width to appear in IE <9. */
+.CodeMirror-scrollbar.cm-sb-ie7 {
   min-width: 18px;
 }
 
